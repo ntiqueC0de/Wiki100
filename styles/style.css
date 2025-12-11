@@ -3,7 +3,7 @@
 
     --text-sm: 1.2rem;
     --text-lg: 1.6rem;
-    --text-para: 1.6rem;
+    --text-para: 1.8rem;
     --text-h1: 6.1rem;
     --text-h2: 4.8rem;
     --text-h3: 3.8rem;
@@ -12,7 +12,7 @@
     /* font weight */
 
     --font-weight-normal: 400;
-    --font-weight-medium: 500;
+    --font-weight-medium: 450;
     --font-weight-bold: 700;
 
     /* line height */
@@ -141,7 +141,7 @@ span {
 
 .btn {
     font-size: 1.6rem;
-    font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-normal);
     text-align: center;
     text-decoration: none;
     padding: 0.5rem 1.5rem;
@@ -257,14 +257,14 @@ span {
     margin-bottom: 10rem;
     min-height: 600px;
     display: grid;
-    
+    justify-items: center;
     gap: 1rem;
     padding-top: 50px;
     grid-template-columns: 1fr 1fr;
     /* /* column-gap: 5rem; */
     row-gap: 10rem; */
-    justify-items: center;
     align-items: flex-start;
+    
 }
 
 .hero-left-card {
@@ -274,18 +274,19 @@ span {
 }
 
 .hero-img {
-    max-width: 400px;
+    max-width: 350px;
     
 }
 .hero-right-card {
     background-color: #cfdece;
-    border-radius: 25px;
-    padding: 1rem 0 1rem 0;
+    border-radius: 2.5rem;
+    /* padding: 1rem 0 1rem 0; */
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 2rem;
-    max-width: 46rem;
+    min-width: 46rem;
+    max-height: 36rem;
 
     /* ADD HOVER ZOOM EFFECT */
     
@@ -370,7 +371,7 @@ span {
 .cta-wrapper {
     display: flex;
     justify-content: center;
-    margin-bottom: 3rem;
+    margin-bottom: 20rem;
 }
 
 .cta-card {
@@ -418,4 +419,163 @@ span {
 .footer-nav-links {
     display: flex;
     gap: 2rem;
+}
+
+.heart-icon {
+    color: var(--secondary-base);
+}
+
+
+/* MEDIA QUERIES */
+@media (max-width: 69rem ) {
+
+    html {
+        font-size: 53%;
+    }
+
+    .feature-grid-container {
+        column-gap: 5rem;
+    }
+
+    .cta-wrapper {
+        margin-bottom: 15rem;
+    }
+}
+
+@media (max-width: 58rem) {
+
+      html {
+        font-size: 49%;
+    }
+
+    .hero-container {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 50rem) {
+     html {
+        font-size: 43.7%;
+    }
+
+    .feature-grid-container {
+        row-gap: 7rem;
+    }
+
+    .cta-card {
+        width: 90%;
+    }
+
+    .feature-wrapper-container {
+        margin-bottom: 10rem;
+    }
+
+    .hero-para-container {
+        max-width: fit-content;
+        /* text-align: center; */
+    }
+
+    /* reduce image sizes */
+}
+
+@media (max-width: 47rem) {
+     html {
+        font-size: 37.5%;
+    }
+
+    .hero-container {
+        height: auto;
+        grid-template-columns: 1fr;
+        row-gap: 0rem;
+        text-align: center;
+        padding-top: 6rem;
+        margin-bottom: 10rem;
+
+        
+    }
+
+     .h1-container {
+        max-width: fit-content;
+        
+    }
+
+    .hero-para-container {
+        max-width: fit-content;
+        text-align: center;
+    }
+
+    .nav {
+        justify-content: center;
+    }
+
+    .cta-card {
+        padding: 5rem 14rem;
+    }
+
+    .hero-img {
+        /* width: 90%; */
+    }
+
+    .hero-left-card {
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .hero-right-card {
+        min-width: 100%;
+    }
+
+    .hero-para-container {
+        max-width: fit-content;
+        text-align: center;
+    }
+
+    
+
+}
+
+@media (max-width: 34rem) {
+
+    html {
+        font-size: 37.5%;
+    }
+
+    .hero-container {
+        height: auto;
+        grid-template-columns: 1fr;
+        row-gap: 0rem;
+        text-align: center;
+        padding-top: 2.5rem;
+        margin-bottom: 20rem;
+    }
+
+    .h1-container {
+        max-width: fit-content;
+        
+    }
+
+    .hero-para-container {
+        max-width: fit-content;
+    }
+
+    .nav {
+        justify-content: center;
+    }
+
+    .cta-card {
+        padding: 5rem 14rem;
+    }
+
+    .feature-grid-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hero-img {
+        max-width: 50rem;
+    }
+
+    .feature-text {
+        max-width: 90ch;
+    }
 }
