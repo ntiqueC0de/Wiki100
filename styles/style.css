@@ -158,7 +158,7 @@ span {
 .btn-primary:hover, .btn-primary:active {
     background-color: var(--primary-shade) ;
     /* color: #000; */
-    border: solid 1px var(--primary-shade);
+    border: solid 2px black;
     
     
 }
@@ -172,7 +172,7 @@ span {
 
 .btn-outline:hover, .btn-outline:hover {
     color: var(--text-dark);
-    border: 1px solid var(--primary-shade);
+    border: 2px solid var(--primary-shade);
     /* color: var(--secondary-shade); */
 }
 
@@ -430,7 +430,7 @@ span {
 @media (max-width: 69rem ) {
 
     html {
-        font-size: 53%;
+        font-size: 56%;
     }
 
     .feature-grid-container {
@@ -455,7 +455,7 @@ span {
 
 @media (max-width: 50rem) {
      html {
-        font-size: 43.7%;
+        font-size: 45.7%;
     }
 
     .feature-grid-container {
@@ -475,12 +475,16 @@ span {
         /* text-align: center; */
     }
 
+    .cta-wrapper {
+        margin-bottom: 13rem;
+    }
+
     /* reduce image sizes */
 }
 
 @media (max-width: 47rem) {
      html {
-        font-size: 37.5%;
+        font-size: 42.5%;
     }
 
     .hero-container {
@@ -530,6 +534,10 @@ span {
         text-align: center;
     }
 
+    .cta-wrapper {
+        margin-bottom: 11rem;
+    }
+
     
 
 }
@@ -537,7 +545,7 @@ span {
 @media (max-width: 34rem) {
 
     html {
-        font-size: 37.5%;
+        font-size: 39.5%;
     }
 
     .hero-container {
@@ -563,7 +571,7 @@ span {
     }
 
     .cta-card {
-        padding: 5rem 14rem;
+        padding: 4rem 1rem;
     }
 
     .feature-grid-container {
@@ -578,4 +586,21 @@ span {
     .feature-text {
         max-width: 90ch;
     }
+
+    .image-swap-order {
+        grid-row: auto;
+        grid-column: auto;
+    }
+
+    .cta-wrapper {
+        margin-bottom: 9rem;
+    }
 }
+
+
+/* 
+CHANGE 3RD FEATURE IMAGE
+FIX CTA BUTTON FOR MOBILE
+
+
+ */
